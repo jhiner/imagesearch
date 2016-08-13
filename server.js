@@ -43,7 +43,7 @@ app.get("/:searchString", function(req, res) {
       saveSearch(historyRecord);
     }
    
-    search.images(req.params.searchString, {skip: offset}, function(err, results) {
+    search.images(req.params.searchString, {top: offset, skip: offset}, function(err, results) {
         if (err) console.dir(err);
         var arrResults = results.map(makeRecord);
         res.json(arrResults);

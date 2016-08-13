@@ -14,3 +14,7 @@ http://host:port/(search term)
 
 To get the 10 latest searches:
 http://host:port/latest
+
+### Notes
+
+https://www.npmjs.com/package/bing.search
